@@ -1,11 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SAP Fresher Japanese - Hệ Thống Quản Lý Đào Tạo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
 </head>
 <body>
-    <h1>xin chao</h1>
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <div class="logo">SAP</div>
+            <div class="header-title">SAP Fresher Japanese</div>
+        </div>
+        <div class="user-menu">
+            <a href="#profile"><i data-lucide="user"></i> Hồ Sơ</a>
+            <a href="#settings"><i data-lucide="settings"></i> Cài Đặt</a>
+            <a href="#logout"><i data-lucide="log-out"></i> Đăng Xuất</a>
+        </div>
+    </header>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside>
+            <div class="menu-title">Menu Chính</div>
+            <ul class="sidebar-menu">
+                <li><a href="#dashboard" class="active"><i data-lucide="layout-dashboard"></i> Dashboard</a></li>
+                <li><a href="#courses"><i data-lucide="book"></i> Khóa Học</a></li>
+                <li><a href="#students"><i data-lucide="users"></i> Học Viên</a></li>
+                <li><a href="#schedules"><i data-lucide="calendar"></i> Lịch Học</a></li>
+                <li><a href="#grades"><i data-lucide="trending-up"></i> Điểm Số</a></li>
+            </ul>
+
+            <div class="menu-title">Quản Lý</div>
+            <ul class="sidebar-menu">
+                <li><a href="#users"><i data-lucide="user-cog"></i> Người Dùng</a></li>
+                <li><a href="#reports"><i data-lucide="file-text"></i> Báo Cáo</a></li>
+                <li><a href="#settings"><i data-lucide="sliders"></i> Cài Đặt</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Dashboard Header -->
+            <div class="dashboard-header">
+                <h1>Dashboard</h1>
+                <p>Chào mừng đến với hệ thống quản lý đào tạo SAP Fresher Japanese</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="cards-grid">
+                <div class="card primary">
+                    <div class="card-icon"><i data-lucide="users"></i></div>
+                    <div class="card-title">Tổng Học Viên</div>
+                    <div class="card-value">256</div>
+                    <div class="card-description">Học viên đang theo học</div>
+                </div>
+
+                <div class="card success">
+                    <div class="card-icon"><i data-lucide="book-open"></i></div>
+                    <div class="card-title">Khóa Học Hoạt Động</div>
+                    <div class="card-value">12</div>
+                    <div class="card-description">Khóa đang tiến hành</div>
+                </div>
+
+                <div class="card warning">
+                    <div class="card-icon"><i data-lucide="check-circle"></i></div>
+                    <div class="card-title">Hoàn Thành Hôm Nay</div>
+                    <div class="card-value">23</div>
+                    <div class="card-description">Bài tập hoàn thành</div>
+                </div>
+
+                <div class="card danger">
+                    <div class="card-icon"><i data-lucide="alert-circle"></i></div>
+                    <div class="card-title">Yêu Cầu Xử Lý</div>
+                    <div class="card-value">5</div>
+                    <div class="card-description">Đang chờ xử lý</div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="button-group">
+                <button class="btn btn-primary"><i data-lucide="plus"></i> Tạo Khóa Học Mới</button>
+                <button class="btn btn-success"><i data-lucide="download"></i> Xuất Báo Cáo</button>
+                <button class="btn btn-secondary"><i data-lucide="search"></i> Tìm Kiếm</button>
+            </div>
+
+            <!-- Recent Students Table -->
+            <div class="table-section">
+                <h2><i data-lucide="users"></i> Học Viên Gần Đây</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên Học Viên</th>
+                                <th>Khóa Học</th>
+                                <th>Tiến Độ</th>
+                                <th>Trạng Thái</th>
+                                <th>Hành Động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Nguyễn Văn A</td>
+                                <td>SAP Fresher - Batch 1</td>
+                                <td><div class="progress"><div class="progress-bar" style="width: 75%"></div></div>75%</td>
+                                <td><span class="status active">Hoạt Động</span></td>
+                                <td><button class="btn-action"><i data-lucide="eye"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Trần Thị B</td>
+                                <td>SAP Fresher - Batch 2</td>
+                                <td><div class="progress"><div class="progress-bar" style="width: 90%"></div></div>90%</td>
+                                <td><span class="status active">Hoạt Động</span></td>
+                                <td><button class="btn-action"><i data-lucide="eye"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>Phạm Văn C</td>
+                                <td>SAP Fresher - Batch 1</td>
+                                <td><div class="progress"><div class="progress-bar" style="width: 50%"></div></div>50%</td>
+                                <td><span class="status pending">Đang Chờ</span></td>
+                                <td><button class="btn-action"><i data-lucide="eye"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>004</td>
+                                <td>Lê Thị D</td>
+                                <td>SAP Fresher - Batch 2</td>
+                                <td><div class="progress"><div class="progress-bar" style="width: 100%"></div></div>100%</td>
+                                <td><span class="status active">Hoạt Động</span></td>
+                                <td><button class="btn-action"><i data-lucide="eye"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>005</td>
+                                <td>Hoàng Văn E</td>
+                                <td>SAP Fresher - Batch 1</td>
+                                <td><div class="progress"><div class="progress-bar" style="width: 20%"></div></div>20%</td>
+                                <td><span class="status inactive">Không Hoạt Động</span></td>
+                                <td><button class="btn-action"><i data-lucide="eye"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Courses Table -->
+            <div class="table-section">
+                <h2><i data-lucide="book"></i> Danh Sách Khóa Học</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tên Khóa Học</th>
+                                <th>Giảng Viên</th>
+                                <th>Số Học Viên</th>
+                                <th>Ngày Bắt Đầu</th>
+                                <th>Trạng Thái</th>
+                                <th>Hành Động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SAP Fresher - Batch 1</td>
+                                <td>Thầy Tanakaさん</td>
+                                <td>45</td>
+                                <td>01/02/2026</td>
+                                <td><span class="status active">Hoạt Động</span></td>
+                                <td><button class="btn-action"><i data-lucide="edit"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>SAP Fresher - Batch 2</td>
+                                <td>Thầy Yamadaさん</td>
+                                <td>38</td>
+                                <td>15/02/2026</td>
+                                <td><span class="status active">Hoạt Động</span></td>
+                                <td><button class="btn-action"><i data-lucide="edit"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>Advanced SAP Training</td>
+                                <td>Thầy Suzukiさん</td>
+                                <td>25</td>
+                                <td>01/03/2026</td>
+                                <td><span class="status pending">Sắp Bắt Đầu</span></td>
+                                <td><button class="btn-action"><i data-lucide="edit"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>Japanese Language - Level 1</td>
+                                <td>Cô Satoさん</td>
+                                <td>32</td>
+                                <td>10/01/2026</td>
+                                <td><span class="status active">Hoạt Động</span></td>
+                                <td><button class="btn-action"><i data-lucide="edit"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 SAP Fresher Japanese Training System. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
