@@ -30,7 +30,7 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #a6bae0 0%, #1fe20a 100%);
     color: white;
     padding: 15px 30px;
     box-shadow: var(--shadow);
