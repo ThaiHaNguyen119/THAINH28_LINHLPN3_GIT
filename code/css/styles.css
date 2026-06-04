@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     --primary-color: #ff5722;
     --primary-dark: #e64a19;
@@ -28,20 +27,22 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 header {
     background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
     color: white;
     padding: 18px 35px;
     box-shadow: var(--shadow-lg);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: sticky;
     top: 0;
+<<<<<<< HEAD
     z-index: 999;
+=======
+    z-index: 500;
+>>>>>>> LinhLPN3
 }
-
 .header-left {
     display: flex;
     align-items: center;
