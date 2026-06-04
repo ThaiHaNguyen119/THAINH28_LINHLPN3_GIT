@@ -5,18 +5,18 @@
 }
 
 :root {
-    --primary-color: #3498db;
-    --primary-dark: #2980b9;
-    --success-color: #0eff74;
-    --warning-color: #f39c12;
-    --danger-color: #e74c3c;
-    --dark-bg: #2c3e50;
-    --light-bg: #f5f5f5;
-    --text-dark: #2c3e50;
-    --text-light: #7f8c8d;
-    --border-color: #ecf0f1;
-    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
+    --primary-color: #ff5722;
+    --primary-dark: #e64a19;
+    --success-color: #00e676;
+    --warning-color: #ff9800;
+    --danger-color: #f44336;
+    --dark-bg: #1e293b;
+    --light-bg: #f8fafc;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --border-color: #e2e8f0;
+    --shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.18);
 }
 
 body {
@@ -30,16 +30,16 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #a6bae0 0%, #1fe20a 100%);
-    color: #3333;
-    padding: 15px 30px;
-    box-shadow: var(--shadow);
+    background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
+    color: white;
+    padding: 18px 35px;
+    box-shadow: var(--shadow-lg);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 999;
 }
 
 .header-left {
